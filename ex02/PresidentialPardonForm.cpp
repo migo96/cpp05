@@ -59,6 +59,7 @@ PresidentialPardonForm& PresidentialPardonForm::operator=(const PresidentialPard
 }
 
 PresidentialPardonForm::PresidentialPardonForm(const PresidentialPardonForm& a)
+:AForm(a)
 {
 	// std::cout << "Copy constructor called\n";
 	*this = a;

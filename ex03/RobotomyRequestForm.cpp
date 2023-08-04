@@ -65,6 +65,7 @@ RobotomyRequestForm& RobotomyRequestForm::operator=(const RobotomyRequestForm& a
 }
 
 RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm& a)
+:AForm(a)
 {
 	// std::cout << "Copy constructor called\n";
 	*this = a;

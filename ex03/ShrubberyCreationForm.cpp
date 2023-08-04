@@ -65,13 +65,14 @@ ShrubberyCreationForm& ShrubberyCreationForm::operator=(const ShrubberyCreationF
 }
 
 ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm& a)
+:AForm(a)
 {
 	// std::cout << "Copy constructor called\n";
 	*this = a;
 }
 
 void drawtree(std::string name){
-	 std::ofstream out(name + "_shrubbery");
+	 std::ofstream out((name + "_shrubbery").c_str());
 	 if (!out.is_open()) {
 		std::cerr << "파일을 열 수 없습니다." << std::endl;
 		return;

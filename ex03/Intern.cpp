@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 # include "Intern.hpp"
+# include <cstdlib>
 
 Intern::Intern(void) 
 {
